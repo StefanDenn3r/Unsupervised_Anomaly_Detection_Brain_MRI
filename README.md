@@ -36,7 +36,7 @@ If you use any of our code, please cite:
 * Python >= 3.6
 
 All packages used in this repository are listed in [requirements.txt](https://github.com/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/requirements.txt).
-To install those run `pip3 install -r requirements.txt` 
+To install those, run `pip3 install -r requirements.txt`
 
 
 ## Folder Structure
