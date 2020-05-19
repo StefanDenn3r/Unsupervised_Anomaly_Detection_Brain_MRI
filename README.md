@@ -20,14 +20,14 @@ If you use any of our code, please cite:
   organization={Springer}
 }
 ```
-* [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](#autoencoders-for-unsupervised-anomaly-segmentation-in-brain-mr-images)
-* [Requirements](#requirements)
-* [Folder Structure](#folder-structure)
-* [Usage](#usage)
-    * [Config file format](#config-file-format)
-    * [CLI-Usage](#cli-usage)
-* [Disclaimer](#disclaimer)
-* [License](#license)
+* [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](#autoencoders-for-unsupervised-anomaly-segmentation-in-brain-mr-images-a-comparative-study)
+  * [Requirements](#requirements)
+  * [Folder Structure](#folder-structure)
+  * [Usage](#usage)
+      * [Config file format](#config-file-format)
+      * [CLI-Usage](#cli-usage)
+  * [Disclaimer](#disclaimer)
+  * [License](#license)
     
 
 <!-- /code_chunk_output -->
@@ -41,9 +41,9 @@ To install those, run `pip3 install -r requirements.txt`
 
 ## Folder Structure
   ```
-  Framework/
+  Unsupervised_Anomaly_Detection_Brain_MRI/
   │
-  ├── Framework Unsupervised Anomaly Detection.ipynb - Jupyter notebook to work on Google Colab
+  ├── Unsupervised Anomaly Detection Brain-MRI.ipynb - Jupyter notebook to work on Google Colab
   ├── run.py - execute to run in commandline
   ├── config.json - holds configuration
   │
