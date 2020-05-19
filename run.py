@@ -5,6 +5,7 @@ import json
 import os
 import sys
 from importlib.machinery import SourceFileLoader
+from typing import Tuple
 
 import tensorflow as tf
 
@@ -25,7 +26,7 @@ def main(args):
     with open(os.path.join(base_path, args.config), 'r') as f:
         json_config = json.load(f)
 
-    dataset = Dataset.Brainweb
+    dataset = Dataset.BRAINWEB
     options = get_options(batchsize=args.batchsize, learningrate=args.lr, numEpochs=args.numEpochs, zDim=args.zDim, outputWidth=args.outputWidth,
                           outputHeight=args.outputHeight, slices_start=args.slices_start, slices_end=args.slices_end,
                           numMonteCarloSamples=args.numMonteCarloSamples, config=json_config)
@@ -35,7 +36,7 @@ def main(args):
         trainer=trainer,
         options=options,
         optimizer=args.optimizer,
-        intermediateResolutions=[args.intermediateResolutions, args.intermediateResolutions],
+        intermediateResolutions=args.intermediateResolutions,
         dropout_rate=0.2,
         dataset=dataset_hc
     )
@@ -126,7 +127,7 @@ if __name__ == '__main__':
     args.add_argument('-w', '--outputWidth', default=128, type=int, help='Output width')
     args.add_argument('-g', '--outputHeight', default=128, type=int, help='Output height')
     args.add_argument('-o', '--optimizer', default='ADAM', type=str, help='Can be either ADAM, SGD or RMSProp')
-    args.add_argument('-i', '--intermediateResolutions', default=8, type=int, help='Spatial Bottleneck resolution')
+    args.add_argument('-i', '--intermediateResolutions', default=(8, 8), type=Tuple[int], help='Spatial Bottleneck resolution')
     args.add_argument('-s', '--slices_start', default=20, type=int, help='slices start')
     args.add_argument('-e', '--slices_end', default=130, type=int, help='slices end')
     args.add_argument('-t', '--trainer', default='AE', type=str, help='Can be every class from trainers directory')
