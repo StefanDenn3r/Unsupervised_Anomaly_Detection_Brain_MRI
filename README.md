@@ -1,5 +1,6 @@
 # Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study
 
+This repository contains the code for our paper on [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](http://arxiv.org/abs/2004.03271). 
 If you use any of our code, please cite:
 ```
 @article{Baur2020,

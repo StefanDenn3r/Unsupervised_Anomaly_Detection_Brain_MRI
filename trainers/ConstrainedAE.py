@@ -19,7 +19,7 @@ class ConstrainedAE(AEMODEL):
         self.x = tf.placeholder(tf.float32, [None, self.config.outputHeight, self.config.outputWidth, self.config.numChannels], name='x')
         self.outputs = self.network(self.x, dropout_rate=self.dropout_rate, dropout=self.dropout, config=self.config)
         self.reconstruction = self.outputs['x_hat']
-        self.z_ = self.outputs['z_']
+        self.z = self.outputs['z']
         self.z_rec = self.outputs['z_rec']
 
         self.rho = self.config.rho

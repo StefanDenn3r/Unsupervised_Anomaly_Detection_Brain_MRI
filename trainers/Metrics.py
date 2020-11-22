@@ -87,9 +87,9 @@ def tpr(P, G):
 
 
 def fpr(P, G):
-    tp = np.sum(np.multiply(P.flatten(), G.flatten()))
+    tn = np.sum(np.multiply(np.invert(P.flatten()), np.invert(G.flatten())))
     fp = np.sum(np.multiply(P.flatten(), np.invert(G.flatten())))
-    return fp / (fp + tp)
+    return fp / (fp + tn)
 
 
 def precision(P, G):

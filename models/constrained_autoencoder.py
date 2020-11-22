@@ -26,8 +26,8 @@ def constrained_autoencoder(x, dropout_rate, dropout, config):
         z_layer = Dense(config.zDim)
         dec_dense = Dense(np.prod(reshape))
 
-        outputs['z_'] = z_ = dropout_layer(z_layer(Flatten()(temp_out)), dropout)
-        reshaped = tf.reshape(dropout_layer(dec_dense(z_), dropout), [-1, *reshape])
+        outputs['z'] = z = dropout_layer(z_layer(Flatten()(temp_out)), dropout)
+        reshaped = tf.reshape(dropout_layer(dec_dense(z), dropout), [-1, *reshape])
         temp_out = intermediate_conv_reverse(reshaped)
 
     with tf.variable_scope('Decoder'):
