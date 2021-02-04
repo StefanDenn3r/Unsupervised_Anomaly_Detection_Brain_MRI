@@ -1,6 +1,6 @@
 # Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study
 
-This repository contains the code for our paper on [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](http://arxiv.org/abs/2004.03271). 
+This repository contains the code for our paper on [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](https://www.sciencedirect.com/science/article/abs/pii/S1361841520303169). 
 If you use any of our code, please cite:
 ```
 @article{Baur2020,
@@ -12,13 +12,13 @@ If you use any of our code, please cite:
 
 ```
 ```
-@inproceedings{baur2018deep,
-  title={Deep autoencoding models for unsupervised anomaly segmentation in brain MR images},
-  author={Baur, Christoph and Wiestler, Benedikt and Albarqouni, Shadi and Navab, Nassir},
-  booktitle={International MICCAI Brainlesion Workshop},
-  pages={161--169},
-  year={2018},
-  organization={Springer}
+@article{baur2021autoencoders,
+  title={Autoencoders for unsupervised anomaly segmentation in brain mr images: A comparative study},
+  author={Baur, Christoph and Denner, Stefan and Wiestler, Benedikt and Navab, Nassir and Albarqouni, Shadi},
+  journal={Medical Image Analysis},
+  pages={101952},
+  year={2021},
+  publisher={Elsevier}
 }
 ```
 * [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](#autoencoders-for-unsupervised-anomaly-segmentation-in-brain-mr-images-a-comparative-study)
