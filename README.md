@@ -1,3 +1,9 @@
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/Unsupervised%20Anomaly%20Detection%20Brain-MRI.ipynb)
+[![DOI:10.1016/j.media.2020.101952](https://zenodo.org/badge/DOI/10.1016/j.media.2020.101952.svg)](https://doi.org/10.1016/j.media.2020.101952)
+[![DOI:10.48550/arXiv.2004.03271](https://zenodo.org/badge/DOI/10.48550/arXiv.2004.03271.svg)](http://arxiv.org/abs/2004.03271)
+
+
 # Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study
 
 This repository contains the code for our paper on [Autoencoders for Unsupervised Anomaly Segmentation in Brain MR Images: A Comparative Study](https://www.sciencedirect.com/science/article/abs/pii/S1361841520303169). 
@@ -99,7 +105,8 @@ Every model can also be trained individually using the script which are provided
 
 
 ### Google Colab Usage
-Offering you an easy start to work with the code base is essential. Therefore, we prepared a Jupyter Notebook for Google Colab, which automatically downloads a toy dataset (Brainweb) and let's you start training the models right away. It can be found [here](https://colab.research.google.com/github/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/Unsupervised%20Anomaly%20Detection%20Brain-MRI.ipynb). Just running the code there, trains all the models and evaluates them. Enjoy! 
+Offering you an easy start to work with the code base is essential. Therefore, we prepared a Jupyter Notebook for Google Colab, which can be found here: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/Unsupervised%20Anomaly%20Detection%20Brain-MRI.ipynb)
+Running all cells will download the brainweb dataset, train all models and evaluate them. Enjoy! 
 
 ## Disclaimer
 The code has been cleaned and polished for the sake of clarity and reproducibility, and even though it has been checked thoroughly, it might contain bugs or mistakes. Please do not hesitate to open an issue or contact the authors to inform of any problem you may find within this repository.
