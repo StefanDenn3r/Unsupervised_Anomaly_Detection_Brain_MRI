@@ -75,7 +75,7 @@ To install those, run `pip3 install -r requirements.txt`
 ## Usage
 
 Since we utilized a private dataset for training on healthy data we exchanged this dataset in the code with the publicly available Brainweb dataset. 
-The Brainweb dataset can be downloaded [here](https://brainweb.bic.mni.mcgill.ca/).
+The Brainweb dataset can be downloaded [here](https://brainweb.bic.mni.mcgill.ca/). For easy use, we also provide a script, which allows you to download the dataset. The script can be found in [here](https://github.com/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/utils/brainweb_download.py). 
 
 ### Config file format
 First define the path to the data directories in `config.default.json`.
@@ -99,9 +99,7 @@ Every model can also be trained individually using the script which are provided
 
 
 ### Google Colab Usage
-Training can be started by importing `Unsupervised Anomaly Detection Brain-MRI.ipynb` in [Google Colab](http://colab.research.google.com).
-This github repository is linked and can directly loaded into the notebook. However, the datasets have to be stored so that Google Colab can access them. 
-Either uploading by a zip-file or uploading it to Google Drive and mounting the drive.
+Offering you an easy start to work with the code base is essential. Therefore, we prepared a Jupyter Notebook for Google Colab, which automatically downloads a toy dataset (Brainweb) and let's you start training the models right away. It can be found [here](https://colab.research.google.com/github/StefanDenn3r/Unsupervised_Anomaly_Detection_Brain_MRI/blob/master/Unsupervised%20Anomaly%20Detection%20Brain-MRI.ipynb). Just running the code there, trains all the models and evaluates them. Enjoy! 
 
 ## Disclaimer
 The code has been cleaned and polished for the sake of clarity and reproducibility, and even though it has been checked thoroughly, it might contain bugs or mistakes. Please do not hesitate to open an issue or contact the authors to inform of any problem you may find within this repository.
